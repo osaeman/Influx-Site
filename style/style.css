@@ -1,0 +1,626 @@
+/* For Headings Khula Font */
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap");
+/* For Main Layout Jost Font */
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* -----CSS Default Reset----- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+:root {
+  --primay-color: #552586;
+  --seconday-color: #d9d9d9;
+  --third-color: white;
+  --fourth-color: #cea822;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Jost", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Khula", sans-serif;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+svg {
+  /* display: block;
+  max-width: 100%; */
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
+.container {
+  width: 94%;
+  margin: 0 auto;
+}
+/*--------------- Home Page Styling------------ */
+/* <!------- Header----- --> */
+header {
+  background-color: transparent;
+  width: 100%;
+}
+
+.header-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  position: relative;
+}
+.header-logo a img {
+  width: 220px;
+  height: 44px;
+}
+.header-menu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.header-menu nav a {
+  margin: 0 50px;
+  font-weight: 500;
+  color: var(--primay-color);
+}
+.header-menu nav a:hover {
+  color: var(--fourth-color);
+}
+.header-cta a:first-child {
+  position: relative;
+}
+.header-cta a:first-child::after {
+  content: "";
+  background-color: #d9d9d9;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: -5px;
+  right: 0;
+  border-radius: 50%;
+}
+.header-cta a i {
+  color: var(--primay-color);
+  font-size: 2.2rem;
+  margin-left: 10px;
+}
+.header-cta a i:hover {
+  color: var(--fourth-color);
+}
+.active-tab {
+  color: var(--fourth-color);
+}
+/*------------ Hero Section-------------- */
+.hero-section {
+  width: 100%;
+}
+
+.hero-section-flexbox {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.hero-flexbox-left {
+  grid-column: 1 / span 5;
+}
+.hero-flexbox-left img {
+  object-position: center;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-flexbox-right {
+  grid-column: 6 / span 3;
+  background-color: var(--primay-color);
+  padding: 50px 3vw;
+}
+
+.hero-flexbox-right h1 {
+  font-size: 3.9rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--third-color);
+  margin-bottom: 15px;
+}
+.hero-flexbox-right span {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 30px;
+  color: var(--seconday-color);
+}
+
+.hero-flexbox-right ul {
+  list-style: disc;
+  /* text-indent: -8px; */
+  margin: 8px 0 20px 35px;
+}
+
+.hero-flexbox-right ul li {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 26px;
+  color: var(--seconday-color);
+  margin-bottom: 7px;
+}
+
+.hero-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.hero-btns button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: block;
+}
+
+.hero-btns button:first-child a {
+  background-color: var(--third-color);
+  display: block;
+  color: var(--primay-color);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 36px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 2px solid transparent;
+  transition: all 0.4s ease-in;
+}
+.hero-btns button:first-child a:hover {
+  border: 2px solid var(--seconday-color);
+  color: var(--seconday-color);
+  background-color: transparent;
+}
+.hero-btns button:last-child a {
+  display: block;
+  border: 2px solid var(--seconday-color);
+  border-radius: 5px;
+  color: var(--seconday-color);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 6px;
+  transition: all 0.4s ease-in;
+}
+.hero-btns button:last-child a:hover {
+  background-color: var(--third-color);
+  color: var(--primay-color);
+  border: 2px solid transparent;
+}
+/* ------Manufacturing Section------- */
+.manufacturing-section {
+  padding: 10px 0;
+}
+
+.manufacturing-section-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primay-color);
+}
+.manufacturing-section-flexbox-left {
+  width: 50%;
+}
+.manufacturing-section-flexbox-left h2 {
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 45px;
+}
+
+.manufacturing-section-flexbox p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 26px;
+}
+
+.manufacturing-section-flexbox-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.manufacturing-section-flexbox-right img:first-child {
+  height: 280px;
+}
+.manufacturing-section-flexbox-right img:last-child {
+  height: 200px;
+}
+/* --------Solution Section---------- */
+.solution-section {
+  background-image: url("../assets/robot\ 1.png");
+  width: 100%;
+  height: 750px;
+}
+.solution-section-container {
+  position: relative;
+  height: 100%;
+}
+
+.solution-section-content {
+  position: absolute;
+  top: 170px;
+  background-color: rgba(128, 0, 128, 0.6);
+  width: 35%;
+  padding: 20px 25px;
+  right: 0;
+  border-radius: 3px;
+}
+.solution-section-content h2 {
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 45px;
+  color: var(--third-color);
+}
+
+.solution-section-content p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 26px;
+  color: var(--seconday-color);
+}
+/* ----------Browse Section------------ */
+.browse-section {
+  width: 100%;
+}
+
+.browse-section-flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+}
+
+.browse-section-flexbox button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: block;
+}
+
+.browse-section-flexbox button a {
+  display: block;
+  border: 2px solid var(--primay-color);
+  border-radius: 5px;
+  color: var(--primay-color);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 6px;
+  transition: all 0.4s ease-in;
+}
+.browse-section-flexbox button a:hover {
+  color: var(--third-color);
+  background-color: var(--primay-color);
+}
+.browse-section-flexbox img {
+  width: 180px;
+}
+
+.browse-section-flexbox img:last-of-type {
+  width: 280px;
+}
+
+/* ---------Location Section---------- */
+.location-section {
+}
+.location-section-flexbox {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.location-flexbox-left {
+  grid-column: 1 / span 3;
+  background-color: var(--primay-color);
+  padding: 30px 3vw;
+}
+
+.location-flexbox-left h2 {
+  font-weight: 700;
+  font-size: 3.7rem;
+  line-height: 45px;
+  color: var(--third-color);
+  margin-bottom: 15px;
+}
+.location-flexbox-left p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 26px;
+  color: var(--seconday-color);
+}
+.location-table {
+  margin-top: 40px;
+  border-collapse: separate;
+  border-spacing: 0 20px;
+}
+
+.location-table tr td i {
+  font-size: 2.8rem;
+  margin-right: 28px;
+  color: var(--seconday-color);
+}
+.location-table tr td span {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 26px;
+  color: var(--seconday-color);
+}
+.location-flexbox-right {
+  grid-column: 4 / span 5;
+}
+
+.location-flexbox-right iframe {
+  width: 100%;
+}
+
+/* ---------Footer--------- */
+footer {
+  width: 100%;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.footer-container a img {
+  width: 220px;
+  height: 44px;
+}
+
+.footer-container nav a {
+  color: var(--primay-color);
+  font-size: 3rem;
+  margin-left: 15px;
+}
+.footer-container nav a:hover {
+  color: var(--fourth-color);
+}
+/*------- PRODUCTS PAGE------ */
+/* Coming Soon */
+.coming-soon {
+  color: var(--primay-color);
+  font-size: 4.2rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* ---------CONTACT PAGE--------- */
+/* Contact form */
+.contact-form {
+}
+
+.contact-form form {
+  width: 35%;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.contact-form form h1 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--primay-color);
+  margin-bottom: 20px;
+}
+
+.contact-form form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid var(--primay-color);
+  border-radius: 6px;
+  color: var(--primay-color);
+  font-size: 1.6rem;
+  padding: 8px 10px;
+  margin-bottom: 25px;
+}
+.contact-form form input::placeholder {
+  color: var(--primay-color);
+  font-weight: 500;
+}
+.contact-form form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  border: 2px solid var(--primay-color);
+  border-radius: 6px;
+  color: var(--primay-color);
+  font-size: 1.6rem;
+  padding: 7px 10px;
+  margin-bottom: 25px;
+}
+.contact-form form textarea::placeholder {
+  color: var(--primay-color);
+  font-weight: 500;
+}
+.contact-form form button {
+  outline: none;
+  display: block;
+  border: 2px solid var(--third-color);
+  border-radius: 5px;
+  color: var(--third-color);
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 30px;
+  border-radius: 5px;
+  padding: 6px 40px;
+  transition: all 0.4s ease-in;
+  background-color: var(--primay-color);
+  cursor: pointer;
+}
+
+.contact-form form button:hover {
+  color: var(--primay-color);
+  background-color: var(--seconday-color);
+}
+/* ----------CNC MACHINING PAGE------------ */
+/* -----CNC Services Section------ */
+.cnc-services-section {
+  width: 100%;
+}
+.cnc-services-flexbox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.cnc-services-flexbox-left {
+  background-color: var(--primay-color);
+  padding: 50px 3vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.cnc-services-flexbox-left h1 {
+  font-size: 3.9rem;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--third-color);
+  margin-bottom: 15px;
+}
+
+.cnc-services-flexbox-left p {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 26px;
+  color: var(--seconday-color);
+  margin-bottom: auto;
+}
+
+.cnc-services-flexbox-left button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  display: block;
+}
+
+.cnc-services-flexbox-left button a {
+  display: block;
+  background-color: var(--third-color);
+  color: var(--primay-color);
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 30px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 6px;
+  border: 2px soldi transparent;
+  transition: all 0.4s ease-in;
+}
+.cnc-services-flexbox-left button a:hover {
+  color: var(--third-color);
+  background-color: var(--primay-color);
+  border: 2px solid var(--seconday-color);
+}
+
+.cnc-services-flexbox-right img {
+  height: 400px;
+  width: 100%;
+  object-position: center;
+  object-fit: fill;
+}
+
+/* --------Capabilities Section--------- */
+.capabilities-section {
+  margin: 60px auto;
+}
+
+.capabilities-section > h2 {
+  font-weight: 600;
+  font-size: 3.7rem;
+  line-height: 45px;
+  color: var(--primay-color);
+  margin-bottom: 15px;
+  text-align: center;
+}
+.capabilities-section > p {
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 26px;
+  color: var(--primay-color);
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.capabilities-section-cards {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.capabilities-section-cards div {
+  width: 320px;
+  border-radius: 2px;
+  background-color: #f5f5f5;
+}
+
+.capabilities-section-cards div img {
+  width: 100%;
+}
+.capabilities-section-card-content {
+  padding: 15px 20px;
+}
+.capabilities-section-cards div h4 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  color: var(--primay-color);
+  text-align: left;
+  margin-bottom: 8px;
+}
+.capabilities-section-cards div p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--primay-color);
+  text-align: left;
+}
