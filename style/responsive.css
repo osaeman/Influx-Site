@@ -1,305 +1,521 @@
-@media (max-width: 1024px) {
-  .hero-section {
-    height: 120vh;
+@media (max-width: 1200px) {
+  .header-menu nav a {
+    margin: 0 2vw;
   }
-  .hero-img {
-    height: 120vh;
+  .logo img {
+    width: 170px;
+    height: 38px;
   }
-  .hero-section-content h1 {
-    font-size: 6.2rem;
-    line-height: 7.2rem;
+  .hero-section-flexbox {
+    grid-template-columns: repeat(8, 1fr);
   }
-
-  .hero-section-content span {
-    font-size: 2.2rem;
-  }
-  .midwife-section h2 {
-    font-size: 4.9rem;
-    line-height: 5.3rem;
-  }
-  .about-section {
-    padding: 80px 20px 80px 20px;
-  }
-  .about-section-flexbox-right {
-    padding: 0 0 0 80px;
+  .hero-flexbox-left {
+    grid-column: 1 / span 4;
   }
 
-  .about-section-flexbox-right h2 {
-    font-size: 4.1rem;
+  .hero-flexbox-right {
+    grid-column: 5 / span 4;
   }
-  .services-section h2 {
-    font-size: 4.4rem;
-    margin-bottom: 26px;
-  }
-
-  .services-section-flexbox {
-    margin-top: 20px;
-    grid-column-gap: 20px;
-  }
-  .services-section-flexbox-right img {
-    width: 90%;
-    aspect-ratio: 3/2;
-  }
-  .rehab-section {
-    padding: 0 0;
-  }
-  .rehab-card-flexbox {
+  .browse-section-flexbox {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 0;
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 15px;
   }
-  .rehab-card-flexbox-left {
+  .browse-section-flexbox div:first-of-type {
+    grid-row: 1;
     grid-column: 1 / span 3;
   }
-  .rehab-card-flexbox-right {
-    grid-column: 1 / span 3;
+  .browse-section-flexbox div:nth-of-type(2) {
+    grid-row: 2;
+    grid-column: 1;
   }
-  .rehab-card-flexbox-right-top {
-    margin-bottom: 12px;
-    padding-top: 16px;
-    border-top: 1px solid #7f7e7e40;
+  .browse-section-flexbox div:nth-of-type(3) {
+    grid-row: 2;
+    grid-column: 2;
   }
-  .contact-section h2 {
-    font-size: 4.8rem;
-    margin-bottom: 20px;
-  }
-  .contact-section-flexbox {
-    grid-column-gap: 60px;
-  }
-  .faq-section-container h2 {
-    font-size: 4.3rem;
+  .browse-section-flexbox div:nth-of-type(4) {
+    grid-row: 2;
+    grid-column: 3;
   }
 }
-@media (max-width: 786px) {
-  .header-mob-button button a {
-    font-size: 1.6rem;
-    padding: 16px 25px;
+@media (max-width: 1024px) {
+  .logo img {
+    width: 140px;
+    height: 32px;
   }
-  .header-flexbox {
-    width: 90%;
+  .hero-flexbox-right h1 {
+    font-size: 3.6rem;
+    line-height: 45px;
   }
-  .hero-section {
-    height: 100vh;
-  }
-  .hero-img {
-    height: 100vh;
-  }
-  .hero-section-content {
-    top: 60%;
-    transform: translateY(-60%);
-    left: 5%;
-    width: 80%;
-  }
-  .hero-section-content h1 {
-    font-size: 4.8rem;
-    line-height: 6.2rem;
+  .hero-flexbox-right span {
+    font-size: 1.8rem;
+    line-height: 26px;
   }
 
-  .hero-section-content span {
-    font-size: 2rem;
+  .hero-flexbox-right ul li {
+    font-size: 1.6rem;
+    line-height: 22px;
   }
-  .midwife-section-container {
-    padding: 80px 0 140px 0;
-  }
-  .midwife-section h2 {
-    font-size: 3.9rem;
-    line-height: 4.9rem;
-  }
-  .about-section {
-    padding: 80px 0 80px 0;
-  }
-  .about-section-flexbox {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-  }
-  .about-section-flexbox-right h2 {
-    font-size: 3.8rem;
-  }
-  .about-section-flexbox-left {
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-  .about-section-flexbox-left img {
-    object-fit: cover;
-    object-position: center;
-    width: 75%;
-    aspect-ratio: 3/2;
-  }
-  .about-section-flexbox-right {
-    width: 100%;
-    padding: 60px 0 0 0;
+  .hero-btns button:first-child a {
+    font-size: 1.7rem;
+    line-height: 25px;
+    width: 150px;
   }
 
-  .services-section h2 {
-    font-size: 3.9rem;
+  .hero-btns button:last-child a {
+    font-size: 1.7rem;
+    line-height: 25px;
+    width: 150px;
   }
-  .services-section-container {
-    width: 90%;
-    padding: 90px 0;
-  }
-  .services-section-flexbox {
-    margin-top: 20px;
-    grid-column-gap: 0;
-    grid-row-gap: 30px;
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .services-section-flexbox-right img {
-    width: 100%;
-    aspect-ratio: 3/1.5;
-  }
-
-  .rehab-card-container {
-    padding: 34px;
-  }
-  .rehab-card-flexbox-left {
-    padding-right: 0;
-  }
-  .rehab-card-flexbox-left-top h2 {
-    font-size: 2.4rem;
-  }
-  .rehab-card-flexbox-right-top h2 {
-    font-size: 2.4rem;
-  }
-  .rehab-card-flexbox-right-bottom h2 {
-    font-size: 2.4rem;
-  }
-  .rehab-card-flexbox-left-top p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-  .rehab-card-flexbox-left-bottom ul li {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-  .rehab-card-flexbox-right-top span {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-  .rehab-card-flexbox-right-bottom p {
-    font-size: 1.6rem;
-    line-height: 2.4rem;
-  }
-  .contact-section-container {
-    width: 90%;
-  }
-  .contact-section h2 {
-    font-size: 4.2rem;
-  }
-  .contact-section-flexbox {
-    grid-template-columns: repeat(1, 1fr);
-    grid-column-gap: 0;
-    grid-row-gap: 40px;
-  }
-  .contact-section-flexbox-right h3 {
+  .manufacturing-section-flexbox-left h2 {
     font-size: 3.2rem;
+    line-height: 40px;
   }
-  .contact-section-flexbox-left img {
-    width: 100%;
-    aspect-ratio: 3/1.5;
-    object-fit: cover;
-    object-position: center;
+
+  .manufacturing-section-flexbox p {
+    font-size: 1.6rem;
+    line-height: 22px;
   }
-  .faq-section-container h2 {
+  .manufacturing-section-flexbox-right img:first-child {
+    height: 230px;
+  }
+  .manufacturing-section-flexbox-right img:last-child {
+    height: 150px;
+  }
+  .solution-section-content h2 {
     font-size: 3.2rem;
+    line-height: 40px;
   }
-  .accordion-title h3 {
-    font-size: 2rem;
+
+  .solution-section-content p {
+    font-size: 1.6rem;
+    line-height: 22px;
   }
-  .header-button {
+  .solution-section {
+    height: 560px;
+  }
+  .solution-section-content {
+    top: 100px;
+    width: 55%;
+    padding: 15px;
+  }
+  .browse-section-flexbox button a {
+    font-size: 1.7rem;
+    line-height: 25px;
+    width: 150px;
+  }
+  .browse-section-flexbox button a:hover {
+    color: var(--third-color);
+    background-color: var(--primay-color);
+  }
+
+  .location-flexbox-left h2 {
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+  .location-flexbox-left p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+
+  .location-table tr td i {
+    font-size: 2.4rem;
+    margin-right: 17px;
+  }
+  .location-table tr td span {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .contact-form form {
+    width: 50%;
+  }
+  .contact-form form h1 {
+    font-size: 3.6rem;
+    line-height: 43px;
+    margin-bottom: 14px;
+  }
+  .cnc-services-flexbox-left h1 {
+    font-size: 3.6rem;
+    line-height: 43px;
+    margin-bottom: 10px;
+  }
+
+  .cnc-services-flexbox-left p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+
+  .cnc-services-flexbox-left button a {
+    font-size: 1.7rem;
+    line-height: 25px;
+    width: 150px;
+  }
+  .cnc-services-flexbox-left {
+    padding: 25px 4vw;
+  }
+  .capabilities-section > h2 {
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+  .capabilities-section > p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .capabilities-section-cards div {
+    width: 270px;
+  }
+  .capabilities-section-cards {
+    width: 100%;
+  }
+  .delivery-section-flexbox {
+    grid-column-gap: 30px;
+    margin: 120px 0;
+  }
+  .delivery-section-flexbox-left h2 {
+    font-size: 3.2rem;
+    line-height: 40px;
+    margin: 15px 0;
+  }
+
+  .delivery-section-flexbox-left p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .served-section > h2 {
+    font-size: 3.2rem;
+    line-height: 40px;
+    margin: 0 0 15px 0;
+  }
+
+  .served-section > p {
+    font-size: 1.6rem;
+    line-height: 22px;
+  }
+  .served-section-cards {
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+
+  .served-section-cards > div {
+    width: 300px;
+  }
+  .served-section-cards > div div img {
+    width: 300px;
+    aspect-ratio: 4/4;
+  }
+  .served-section-cards > div h3 {
+    font-size: 1.8rem;
+    padding: 20px 10px;
+  }
+  .browse-section-flexbox {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 768px) {
+  .logo img {
+    width: 120px;
+    height: 28px;
+  }
+  .hamburger {
+    display: block;
+  }
+  .header-menu {
     display: none;
-  }
-  .header-logo img {
-    width: 165px;
-    max-width: 100%;
-    max-height: 29px;
   }
   .hamburger-menu {
     display: block;
   }
-  /* Imprint Page Styling */
-  .imprint-section {
-    width: 90%;
-    margin: 130px auto 80px;
+  .hero-section-flexbox {
+    grid-template-columns: repeat(1, 1fr);
   }
-  .imprint-section h1 {
-    font-size: 4rem;
+  .hero-flexbox-left {
+    grid-column: 1;
+    height: 45vh;
   }
-  .imprint-section-part-4 {
-    margin-top: 120px;
-    padding-right: 0;
+
+  .hero-flexbox-right {
+    grid-column: 1;
   }
-  .data-privacy-section {
-    width: 90%;
-    margin: 130px auto 80px;
-  }
-  .data-privacy-section h1 {
-    font-size: 4rem;
-  }
-  .data-privacy-section h2 {
+  .hero-flexbox-right h1 {
     font-size: 3rem;
-    margin: 30px 0 22px;
+    line-height: 38px;
+    margin-bottom: 3px;
   }
-  .data-privacy-section h3 {
+  .hero-flexbox-right span {
+    font-size: 1.6rem;
+  }
+
+  .hero-flexbox-right ul li {
+    font-size: 1.5rem;
+  }
+  .hero-flexbox-right {
+    padding: 30px 4vw 30px 3vw;
+  }
+
+  .hero-btns {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    row-gap: 15px;
+    column-gap: 15px;
+  }
+
+  .hero-btns button:first-child a {
+    font-size: 1.5rem;
+    width: 140px;
+  }
+
+  .hero-btns button:last-child a {
+    font-size: 1.5rem;
+    width: 140px;
+  }
+  .manufacturing-section-flexbox-left h2 {
+    font-size: 2.8rem;
+    text-align: center;
+    line-height: 36px;
+  }
+
+  .manufacturing-section-flexbox p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .manufacturing-section-flexbox {
+    flex-direction: column;
+  }
+  .manufacturing-section-flexbox-left {
+    width: 100%;
+  }
+  .manufacturing-section-flexbox-right img:first-child {
+    height: 160px;
+  }
+  .manufacturing-section-flexbox-right img:last-child {
+    height: 120px;
+  }
+  .solution-section-content h2 {
+    font-size: 2.8rem;
+    line-height: 36px;
+  }
+
+  .solution-section-content p {
+    font-size: 1.5rem;
+  }
+  .solution-section {
+    height: 500px;
+    background-size: fill;
+  }
+  .location-flexbox-left h2 {
+    font-size: 2.8rem;
+    line-height: 36px;
+  }
+  .location-flexbox-left p {
+    font-size: 1.5rem;
+  }
+  .location-table {
+    margin-top: 10px;
+  }
+
+  .location-table tr td i {
+    font-size: 2.2rem;
+    margin-right: 15px;
+  }
+
+  .location-table tr td span {
+    font-size: 1.5rem;
+  }
+  .location-section-flexbox {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .location-flexbox-left {
+    grid-column: 1;
+    padding: 20px 4vw;
+  }
+  .location-flexbox-right {
+    grid-column: 1;
+    height: 300px;
+  }
+  .contact-form form {
+    width: 80%;
+  }
+  .contact-form form h1 {
+    font-size: 3rem;
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  .contact-form form input {
+    font-size: 1.5rem;
+  }
+
+  .contact-form form textarea {
+    font-size: 1.5rem;
+  }
+  .contact-form form button {
+    padding: 6px 25px;
+    font-size: 1.5rem;
+  }
+
+  .cnc-services-flexbox-left h1 {
+    font-size: 3rem;
+    line-height: 38px;
+  }
+
+  .cnc-services-flexbox-left p {
+    font-size: 1.5rem;
+  }
+
+  .cnc-services-flexbox-left button a {
+    font-size: 1.5rem;
+    width: 140px;
+  }
+  .capabilities-section > h2 {
+    font-size: 2.8rem;
+    line-height: 36px;
+    margin-bottom: 8px;
+  }
+  .capabilities-section > p {
+    font-size: 1.5rem;
+    width: 90%;
+    font-weight: 400;
+  }
+  .capabilities-section-cards div h4 {
     font-size: 1.8rem;
-    margin: 14px 0 5px;
+    margin-bottom: 5px;
   }
-  .footer-container {
-    padding: 50px 0;
+  .capabilities-section-cards div p {
+    font-size: 1.4rem;
+  }
+  .capabilities-section-cards div {
+    width: 100%;
+  }
+  .capabilities-section-cards div img {
+    aspect-ratio: 6/3.5;
+  }
+  .capabilities-section-cards {
+    width: 70%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    row-gap: 20px;
   }
-  .footer-logo img {
-    margin-right: 0;
-    margin-bottom: 20px;
+  .delivery-section-flexbox-left h2 {
+    font-size: 2.8rem;
+    line-height: 36px;
+    margin: 0 0 8px 0;
+    text-align: center;
   }
-  .course-reg-form-container {
-    margin: 120px auto 80px;
+  .delivery-section-flexbox {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-column-gap: 0;
+    grid-template-columns: none;
+    margin: 90px auto;
   }
-  .course-reg-form-container h1 {
-    font-size: 4rem;
+  .delivery-section-flexbox-left p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .delivery-section-flexbox-left {
+    padding-top: 0;
+  }
+  .delivery-section-flexbox-right {
+    justify-content: center;
+  }
+  .delivery-section-flexbox-right img {
+    width: 60%;
+  }
+  .served-section > h2 {
+    font-size: 2.8rem;
+    line-height: 36px;
+    margin: 0 0 8px 0;
+  }
+
+  .served-section > p {
+    font-size: 1.5rem;
+    width: 90%;
+    font-weight: 400;
+  }
+  .served-section-cards {
+    row-gap: 30px;
+    column-gap: 30px;
+    margin: 20px 0 60px 0;
+  }
+
+  .served-section-cards > div {
+    width: 250px;
+  }
+  .served-section-cards > div div img {
+    width: 250px;
+    aspect-ratio: 4/4;
+  }
+  .served-section-cards > div h3 {
+    font-size: 1.6rem;
+    padding: 15px 10px;
+  }
+  .browse-section-flexbox div img {
+    width: 50px;
+  }
+  .browse-section-flexbox div img {
+    width: 110px;
+  }
+
+  .browse-section-flexbox div:last-of-type img {
+    width: 170px;
   }
 }
 
 @media (max-width: 576px) {
-  .about-section-flexbox-left img {
-    object-fit: cover;
-    object-position: center;
-    width: 75%;
-    aspect-ratio: 3/3.4;
+  .hero-flexbox-right h1 {
+    font-size: 2.6rem;
+    line-height: 32px;
   }
-  .data-privacy-section h1 {
-    font-size: 3.2rem;
+  .cnc-services-flexbox-left h1 {
+    font-size: 2.6rem;
+    line-height: 32px;
   }
-  .data-privacy-section h2 {
-    font-size: 2.5rem;
+  .cnc-services-flexbox {
+    display: flex;
+    flex-direction: column-reverse;
+    grid-column-gap: 0;
+    grid-template-columns: none;
   }
-  .input-fields-set {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+  .cnc-services-flexbox-left {
+    margin-top: -10px;
   }
-  .input-fields-set div {
+
+  .cnc-services-flexbox-right img {
+    height: 100%;
+  }
+  .footer-container {
+    padding: 12px 0;
+  }
+  .footer-container nav a {
+    font-size: 2.2rem;
+  }
+  .capabilities-section {
+    margin: 60px auto 20px auto;
+  }
+
+  .capabilities-section-cards {
     width: 100%;
+    margin-top: 25px;
   }
-  .dob input,
-  .dob-child input {
-    width: 50% !important;
+  .served-section-cards > div {
+    width: 80%;
   }
-  .form-notice {
-    margin: 80px 0 0 0;
-    font-size: 1.5rem;
-    line-height: 27px;
+  .served-section-cards > div div img {
+    width: 100%;
+    aspect-ratio: 4/2.5;
+  }
+  .browse-section-flexbox div img {
+    width: 80px;
+  }
+
+  .browse-section-flexbox div:last-of-type img {
+    width: 140px;
   }
 }
 
 @media (max-width: 310px) {
-  .header-mob-button button a {
-    font-size: 1.3rem;
-    padding: 10px 17px;
-  }
 }
