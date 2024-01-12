@@ -227,15 +227,20 @@
     display: block;
   }
   .hero-section-flexbox {
-    grid-template-columns: repeat(1, 1fr);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
   }
   .hero-flexbox-left {
-    grid-column: 1;
+    grid-column: 0;
     height: 45vh;
+    width: 100%;
   }
 
   .hero-flexbox-right {
-    grid-column: 1;
+    grid-column: 0;
+    width: 100%;
   }
   .hero-flexbox-right h1 {
     font-size: 3rem;
