@@ -481,7 +481,7 @@
   }
   .cnc-services-flexbox {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     grid-column-gap: 0;
     grid-template-columns: none;
   }
@@ -490,7 +490,7 @@
   }
 
   .cnc-services-flexbox-right img {
-    height: 100%;
+    height: 35vh;
   }
   .footer-container {
     padding: 12px 0;
